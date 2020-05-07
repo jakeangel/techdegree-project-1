@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Lora', serif;
   color: #222;
-  background: #f7f5f0;
+  background: #740d9e;
 }
 /* Link Styles */
 
@@ -55,7 +55,7 @@ a:hover {
 .nav a:hover {
   color: white
 }
-
+/*Photo by Alexander Londoño on Unsplash*/
 header {
   text-align: center;
   background: url('images/background.jpg') no-repeat center ;
@@ -64,6 +64,18 @@ header {
   padding-top: 60px;
   font-family: 'Permanent Marker', cursive;
 }
+/*experience header*/
+
+/*Photo by timJ on Unsplash*/
+.AboutMe-header {
+  text-align: center;
+  background: url('images/experience-bg.jpg') no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  font-family: 'Permanent Marker', cursive;
+}
+
 header {
   line-height: 1.5;
 }
@@ -73,11 +85,14 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
+  transform: perspective(0px) rotateX(0deg);
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(180deg);
+  transform: perspective(1000px) rotateX(90deg);
 }
+
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -94,43 +109,65 @@ header .profile-image:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card:hover {
-  border-color: #ff99ff;
+  text-align: center;
+  background: #000;
+  border-bottom: 2rem solid #000;
+  border-top: 1rem solid #000;
+  border-radius: 1rem;
+  transition: all .5s ease-in;
+  color: white;
+
 }
 
-ul.skills {
-  padding: 0;
-  text-align: center;
+
+
+.card:hover {
+  border-color:#b01515 ;
 }
+
+
+
 
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #b01515;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #740d9e;
+}
+
+
+/*hobbies list*/
+
+
+.hobbies li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #740d9e;
+  color: white;
+  padding: 10px 10px;
+  margin: 4px;
+}
+
+.hobbies li:nth-child(odd) {
+  background: #b01515;
 }
 
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  color: white;
 }
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: 1rem;
 }
 
 footer ul {
