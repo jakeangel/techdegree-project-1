@@ -76,6 +76,15 @@ header {
   font-family: 'Permanent Marker', cursive;
 }
 
+.contact-header{
+  text-align: center;
+  background: url('images/telephone.jpg') no-repeat center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  font-family: 'Permanent Marker', cursive;
+}
+
 header {
   line-height: 1.5;
 }
@@ -85,11 +94,10 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transform: perspective(0px) rotateX(0deg);
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: perspective(1000px) rotateX(90deg);
+  transform:rotateX(90deg);
 }
 
 
@@ -158,6 +166,10 @@ header .profile-image:hover {
   background: #b01515;
 }
 
+figure{
+  color: white;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
@@ -211,6 +223,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      align-items: flex-start;
   }
 
   header {
